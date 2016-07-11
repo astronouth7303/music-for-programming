@@ -66,6 +66,6 @@ class MusicForProgramming:
 if __name__ == "__main__":
     mfp = MusicForProgramming(base_url="http://www.musicforprogramming.net/",
     feed_url="http://www.musicforprogramming.net/rss.php",
-    destination_dir="/home/YOUR_USERNAME/music/musicforprogramming/") # use full path with end slash
+    destination_dir=os.path.expanduser("~/Music/musicforprogramming/")) # use full path with end slash
 
     mfp.get_all_episodes()
